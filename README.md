@@ -8,7 +8,9 @@ sudo apt-get install libopenexr-dev
 conda env create -f environment.yaml
 conda activate ismap
 ``` 
-You will then need to install tiny-cuda-nn to use the hash grid. We recommend installing it from source code.[source](https://github.com/nvlabs/tiny-cuda-nn)
+You will then need to install tiny-cuda-nn to use the hash grid. We recommend installing it from [source code.](https://github.com/nvlabs/tiny-cuda-nn)
 ## Acknowledgement ##
 Thanks to previous open-sourced repo: [ESLAM](https://github.com/idiap/ESLAM), [Co-SLAM](https://github.com/HengyiWang/Co-SLAM), [NICE-SLAM](https://github.com/cvg/nice-slam)
+
+
 **The code will be coming soon**
