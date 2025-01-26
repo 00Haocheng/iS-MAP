@@ -9,8 +9,24 @@ conda env create -f environment.yaml
 conda activate ismap
 ``` 
 You will then need to install tiny-cuda-nn to use the hash grid. We recommend installing it from [source code.](https://github.com/nvlabs/tiny-cuda-nn)
+``` 
+cd tiny-cuda-nn/bindings/torch
+python setup.py install
+``` 
+## Dataset Preparation##
+
+## Evaluation ##
+
 ## Acknowledgement ##
 Thanks to previous open-sourced repo: [ESLAM](https://github.com/idiap/ESLAM), [Co-SLAM](https://github.com/HengyiWang/Co-SLAM), [NICE-SLAM](https://github.com/cvg/nice-slam)
-
-
-**The code will be coming soon**
+## Citing ##
+If you find our work useful, please consider citing:
+``` 
+@inproceedings{wang2024map,
+  title={iS-MAP: Neural Implicit Mapping and Positioning for Structural Environments},
+  author={Wang, Haocheng and Cao, Yanlong and Shou, Yejun and Shen, Lingfeng and Wei, Xiaoyao and Xu, Zhijie and Ren, Kai},
+  booktitle={Proceedings of the Asian Conference on Computer Vision},
+  pages={747--763},
+  year={2024}
+}
+``` 
