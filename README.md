@@ -21,9 +21,15 @@ After downloading the data to the ./Datasets folder, you can run iS-MAP:
 ``` 
 python -W ignore run.py configs/Replica/room0.yaml
 ``` 
-The rendering image and reconstruction mesh are saved in ```$OUTPUT_FOLDER/mapping_vis ``` and``` $OUTPUT_FOLDER/mesh```. The ``` final_mesh_eval_rec_culled.ply```  means culling the unseen and occluded regions.
+The rendering image and reconstruction mesh are saved in ```$OUTPUT_FOLDER/mapping_vis ``` and``` $OUTPUT_FOLDER/mesh```. The ``` final_mesh_eval_rec_culled.ply```  means mesh culling the unseen and occluded regions.
 
 ## Evaluation ##
+### Average Trajectory Error ###
+Average Trajectory Error
+To evaluate the average trajectory error. Run the command below with the corresponding config file:
+``` 
+python src/tools/eval_ate.py configs/Replica/room0.yaml
+``` 
 
 ## Acknowledgement ##
 Thanks to previous open-sourced repo: [ESLAM](https://github.com/idiap/ESLAM), [Co-SLAM](https://github.com/HengyiWang/Co-SLAM), [NICE-SLAM](https://github.com/cvg/nice-slam)
