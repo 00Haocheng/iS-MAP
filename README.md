@@ -30,7 +30,8 @@ To evaluate the average trajectory error. Run the command below with the corresp
 ``` 
 python src/tools/eval_ate.py configs/Replica/room0.yaml
 ``` 
-
+### Reconstruction Error ###
+We follow the evaluation method of [Co-SLAM](https://github.com/HengyiWang/Co-SLAM), remove the unseen areas and add some virtual camera positions to balance accuracy and prediction ability. For detailed evaluation code, please refer to [here.](https://github.com/JingwenWang95/neural_slam_eval)
 ## Acknowledgement ##
 Thanks to previous open-sourced repo: [ESLAM](https://github.com/idiap/ESLAM), [Co-SLAM](https://github.com/HengyiWang/Co-SLAM), [NICE-SLAM](https://github.com/cvg/nice-slam)
 ## Citing ##
