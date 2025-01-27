@@ -14,15 +14,14 @@ cd tiny-cuda-nn/bindings/torch
 python setup.py install
 ``` 
 ## Download Dataset & Data preprocessing ##
-Firstly, you should generate line mask with LSD. Please move these generate mask images to the root path of dataset and create the folder named ./line_seg. 
-
-We recommend directly downloading the processed dataset including the ./line_seg folder [here.](https://drive.google.com/drive/folders/1vU4aisJtXd2-svHKarMhPx5AMVQHfxgg?usp=sharing)
+Firstly, you should generate line mask with LSD. Please move these generate mask images to the root path of dataset and create the folder named ./line_seg. We recommend directly downloading the processed dataset including the ./line_seg folder [here.](https://drive.google.com/drive/folders/1vU4aisJtXd2-svHKarMhPx5AMVQHfxgg?usp=sharing)
 
 ## Run ##
 After downloading the data to the ./Datasets folder, you can run iS-MAP:
 ``` 
 python -W ignore run.py configs/Replica/room0.yaml
 ``` 
+The rendering image and reconstruction mesh are saved in ```$OUTPUT_FOLDER/mapping_vis ``` and``` $OUTPUT_FOLDER/mesh```. The ``` final_mesh_eval_rec_culled.ply```  means culling the unseen and occluded regions.
 
 ## Evaluation ##
 
