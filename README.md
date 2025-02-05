@@ -18,7 +18,7 @@ Download the data as below and the data is saved into the ./Datasets/Replica fol
 ``` 
 bash scripts/download_replica.sh
 ``` 
-For running iS-MAP, you should generate line mask with LSD first. We provide a simple reference code to perform LSD segmentation. For example, for room0 scene, after downloading the Replica dataset, you can run 
+For running iS-MAP, you should generate line mask with LSD first. We provide a simple preprocessing code to perform LSD segmentation. For example, for room0 scene, after downloading the Replica dataset, you can run 
 ``` 
 python preprocess_line.py 
 ``` 
