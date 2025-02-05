@@ -27,7 +27,7 @@ The line mask images will be generated in the root path of dataset and the folde
 Alternatively, we recommend directly downloading the preprocessed dataset including the ```./line_seg``` folder [here.](https://drive.google.com/drive/folders/1vU4aisJtXd2-svHKarMhPx5AMVQHfxgg?usp=sharing)
 
 ## Run ##
-After downloading the data to the ./Datasets folder, you can run iS-MAP:
+After downloading the data to the ```./Datasets folder```, you can run iS-MAP:
 ``` 
 python -W ignore run.py configs/Replica/room0.yaml
 ``` 
