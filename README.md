@@ -14,7 +14,13 @@ cd tiny-cuda-nn/bindings/torch
 python setup.py install
 ``` 
 ## Download Dataset & Data preprocessing ##
-Firstly, you should generate line mask with LSD. Please move these generate mask images to the root path of dataset and create the folder named ./line_seg. We recommend directly downloading the processed dataset including the ./line_seg folder [here.](https://drive.google.com/drive/folders/1vU4aisJtXd2-svHKarMhPx5AMVQHfxgg?usp=sharing)
+Firstly, you should generate line mask with LSD. We provide a simple reference code to perform LSD segmentation. For example, for room0 scene, after downloading the Replica dataset, you can run
+``` 
+python preprocess_line.py 
+```
+These  mask images will be generated in the root path of dataset and the folder named ```./line_seg```. 
+
+We recommend directly downloading the processed dataset including the ```./line_seg``` folder [here.](https://drive.google.com/drive/folders/1vU4aisJtXd2-svHKarMhPx5AMVQHfxgg?usp=sharing)
 
 ## Run ##
 After downloading the data to the ./Datasets folder, you can run iS-MAP:
@@ -25,7 +31,6 @@ The rendering image and reconstruction mesh are saved in ```$OUTPUT_FOLDER/mappi
 
 ## Evaluation ##
 ### Average Trajectory Error ###
-Average Trajectory Error
 To evaluate the average trajectory error. Run the command below with the corresponding config file:
 ``` 
 python src/tools/eval_ate.py configs/Replica/room0.yaml
