@@ -14,13 +14,13 @@ cd tiny-cuda-nn/bindings/torch
 python setup.py install
 ``` 
 ## Download Dataset & Data preprocessing ##
-Firstly, you should generate line mask with LSD. We provide a simple reference code to perform LSD segmentation. For example, for room0 scene, after downloading the Replica dataset, you can run
+Firstly, you should generate line mask with LSD. We provide a simple reference code to perform LSD segmentation. For example, for room0 scene, after downloading the Replica dataset, you can run the following command.
+The line mask images will be generated in the root path of dataset and the folder named ```./line_seg```. 
 ``` 
 python preprocess_line.py 
 ```
-These  mask images will be generated in the root path of dataset and the folder named ```./line_seg```. 
 
-We recommend directly downloading the processed dataset including the ```./line_seg``` folder [here.](https://drive.google.com/drive/folders/1vU4aisJtXd2-svHKarMhPx5AMVQHfxgg?usp=sharing)
+Alternatively, we recommend directly downloading the preprocessed dataset including the ```./line_seg``` folder [here.](https://drive.google.com/drive/folders/1vU4aisJtXd2-svHKarMhPx5AMVQHfxgg?usp=sharing)
 
 ## Run ##
 After downloading the data to the ./Datasets folder, you can run iS-MAP:
